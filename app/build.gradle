@@ -10,6 +10,11 @@ android {
         versionName "1.0"
         multiDexEnabled true
     }
+
+    dexOptions {
+        preDexLibraries = false
+    }
+
     buildTypes {
         release {
             minifyEnabled false
