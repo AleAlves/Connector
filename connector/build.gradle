@@ -2,32 +2,6 @@ apply plugin: 'com.android.library'
 //apply plugin: 'maven-publish'
 apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.AleAlves'
-//publishing {
-//    publications {
-//
-//        def artifactSrc = "$buildDir/outputs/aar/connector-debug.aar"
-//
-//        maven(MavenPublication) {
-//            groupId 'br.com.aleson.connector'
-//            artifactId 'Connector'
-//            version '2.0.0'
-//            artifact source: artifactSrc, extension: 'aar'
-//
-//            pom.withXml {
-//                asNode().appendNode('description', 'Connector')
-//                def dependenciesNode = asNode().appendNode('dependencies')
-//                configurations.compile.allDependencies.each {
-//                    if (it.group != null && (it.name != null || "unspecified".equals(it.name)) && it.version != null) {
-//                        def dependencyNode = dependenciesNode.appendNode('dependency')
-//                        dependencyNode.appendNode('groupId', it.group)
-//                        dependencyNode.appendNode('artifactId', it.name)
-//                        dependencyNode.appendNode('version', it.version)
-//                    }
-//                }
-//            }
-//        }
-//    }
-//}
 
 android {
     compileSdkVersion 26
@@ -36,7 +10,7 @@ android {
         minSdkVersion 19
         targetSdkVersion 26
         versionCode 202
-        versionName "2.0.2"
+        versionName "3.0.0"
         multiDexEnabled true
     }
 
