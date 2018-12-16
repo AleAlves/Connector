@@ -1,7 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven-publish'
-apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.AleAlves'
+//apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion 26
@@ -9,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 26
-        versionCode 202
-        versionName "3.0.0"
+        versionCode 301
+        versionName "3.0.1"
         multiDexEnabled true
     }
 
@@ -35,3 +33,7 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
     compile 'com.google.code.gson:gson:2.8.2'
 }
+
+
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.AleAlves'
